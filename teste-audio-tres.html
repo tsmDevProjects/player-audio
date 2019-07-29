@@ -1,0 +1,16 @@
+<audio id="background_audio" autoplay="autoplay" loop>
+  <source src="http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a" />
+</audio> 
+
+<a href="#noscroll" id="mute"><img src="status-1.png"/></a>
+
+
+<script>
+var audio = document.getElementById('background_audio');
+
+document.getElementById('mute').addEventListener('click', function (e){
+    e = e || window.event;
+    audio.muted = !audio.muted;
+    e.preventDefault();
+}, false);
+</script>
